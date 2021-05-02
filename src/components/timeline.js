@@ -1,5 +1,18 @@
-import React from "react";
+import React from 'react';
+import Skeleton from 'react-loading-skeleton';
+
+//   - https://www.npmjs.com/package/react-loading-skeleton
 
 export default function Timeline() {
-  return <p>I am the timeline</p>;
+    const photos = null;
+    
+    return (
+        <div className="container col-span-2">
+            {!photos ? (
+                <Skeleton count={4} width={640} height={500} className="mb-5" />
+            ) : (
+                photos.map((content) => <p>I will be a photo!</p>)
+            )}
+        </div>
+    );
 }
