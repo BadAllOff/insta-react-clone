@@ -22,6 +22,7 @@ export async function getUserByUserId(userId) {
     docId: item.id,
   }));
 
+  console.log(user)
   return user;
 }
 
