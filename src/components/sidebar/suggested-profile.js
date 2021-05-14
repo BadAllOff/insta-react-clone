@@ -18,7 +18,7 @@ export default function SuggestedProfile({
       <div className="flex items-center justify-between">
         <img
           className="rounded-full w-8 flex mr-3"
-          src={`/images/avatars/${username.toLowerCase()}.jpg`}
+          src={`/images/avatars/${username}.jpg`}
           alt={`Follow ${username}`}
         />
         <Link to={`/p/${username}`}>
