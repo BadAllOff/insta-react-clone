@@ -1,5 +1,9 @@
 import { firebase, FieldValue } from "../lib/firebase";
 
+export async function getSuggestedProfiles(userId) {
+  
+}
+
 export async function doesUsernameExist(username) {
   const result = await firebase
     .firestore()
@@ -22,7 +26,6 @@ export async function getUserByUserId(userId) {
     docId: item.id,
   }));
 
-  console.log(user)
   return user;
 }
 
@@ -52,3 +55,5 @@ export async function getUserFollowedPhotos(userId, followingUserIds) {
 
   return photosWithUserDetails;
 }
+
+
